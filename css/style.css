@@ -1,5 +1,12 @@
+body{
+    background-color:#f3f3f3;
+}
 .header{
     display:flex;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.wrapper{
     max-width: 1200px;
     margin:0 auto;
 }
@@ -18,4 +25,84 @@
     color:black;
     font-family: cabin;
     font-size: 16px;
+}
+.jumbotron{
+    background-image: url(../img/jumbotron.jpg);
+}
+.jumbotron .overlay{
+    background: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+.jumbotron .overlay:hover{
+    background: rgba(0,0,0,0.7);
+}
+.jumbotron .wrapper{
+    color:#fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.jumbotron .wrapper .box{
+    font-family: "cabin", sans-serif;
+    max-width: 40%;
+}
+.pill{
+    padding: 5px 10px;
+    background-color:blue;
+    border-radius: 20px;
+    color:#fff;
+}
+.pill + .pill{
+    margin-left: 10px;
+}
+.pill.purple{
+    background-color: rgb(199, 91, 199);
+}
+.pill.orange{
+    background-color:rgb(231, 167, 47);
+}
+.pill.red{
+    background-color: rgb(161, 48, 48);
+}
+.pill.blue{
+    background-color: rgb(88, 88, 247);
+}
+.card{
+    background-color: #fff;
+    padding: 30px;
+    aspect-ratio: 4 / 3;
+}
+.cards-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+   
+}
+#einsten{
+    background: url(../img/card2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+}
+#concert{
+    background: url(../img/card1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#adventagment{
+    background-color: rgb(219, 104, 104);
+}
+#card2{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px;
+}
+#card-top{
+    background-image: url(../img/card3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+#card-bottom{
+    padding: 0px 30px 30px;
+
 }

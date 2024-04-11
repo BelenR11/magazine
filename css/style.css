@@ -1,14 +1,17 @@
 body{
     background-color:#f3f3f3;
 }
-.header{
-    display:flex;
-    max-width: 1200px;
-    margin:0 auto;
-}
 .wrapper{
     max-width: 1200px;
     margin:0 auto;
+}
+.header{
+    position:sticky;
+    top: 0;
+    background: #fff;
+}
+.header .wrapper{
+    display: flex;
 }
 .logo{
     width: 158px;
@@ -50,6 +53,9 @@ body{
     background-color:blue;
     border-radius: 20px;
     color:#fff;
+    font-family: "cabin", sans-serif;
+    text-transform:uppercase;
+    font-size: 10px;
 }
 .pill + .pill{
     margin-left: 10px;
@@ -65,6 +71,13 @@ body{
 }
 .pill.blue{
     background-color: rgb(88, 88, 247);
+}
+.pill.white:hover{
+background: white;
+color:black;
+}
+.pill:hover{
+background: black;
 }
 .card{
     background-color: #fff;
@@ -105,4 +118,12 @@ body{
 #card-bottom{
     padding: 0px 30px 30px;
 
+}
+h2{
+    font-family: "lato", sans-serif;
+    font-size: 26px;
+}
+h3{
+    font-family: "lato", sans-serif;
+    font-size: 22px;
 }
